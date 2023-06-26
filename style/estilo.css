@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Raleway', sans-serif; 
+  --background: #F5F5F5;
+  --destaque: #464646;
+  --icones: #2A7AE4;
+  --contato: #EAF2FD;
+}
+
+body {
+  background-color: var(--background);
+}
+/* header */ 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.logo::before {
+  content: url(../images/auto_awesome_black_24dp\ 1.svg);
+  
+}
+
+header > div > p{
+  margin-bottom: 0.2rem;
+}
+
+/* .navegacao {
+  display: flex;
+  font-size: 1.4rem;
+} */
+
+/* .navegacao__lista {
+  display: flex;
+  list-style: none;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.navegacao__lista-itens {
+  margin-right: 3.2rem;
+} */
+
+.navegacao__contato {
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 25%); 
+}
+
+/* Sobre mim */
