@@ -20,7 +20,7 @@ body {
   background-color: var(--background);
 }
 
-h1 {
+h1,h2,p {
   color: var(--destaque);
 } 
 
@@ -75,15 +75,14 @@ header {
   gap: 1.6rem;
 }
 
-.apresentacao__texto-titulo {
+.apresentacao__texto-titulo, .sobre__titulo {
   font-weight: 700;
   font-size: 2.2rem;
 }
 
-.apresentacao__texto-paragrafo {
+.apresentacao__texto-paragrafo, .sobre__paragrafo{
   font-weight: 400;
-  font-size: 1.6rem;
-  color: var(--destaque);
+  font-size: 1.4rem;
 }
 
 
@@ -98,8 +97,17 @@ header {
 .apresentacao__link {
   text-decoration: none;
   color: var(--destaque);
-}
+} 
 
 .apresentacao__link::after {
   content: url(../images/arrow_back_black_24dp\ 1.svg);
+}
+
+/* Sobre mim */
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  background-color: var(--contato);
 }
