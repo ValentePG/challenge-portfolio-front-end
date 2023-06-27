@@ -30,16 +30,16 @@ h1,h2,p {
 /* header */ 
 
 header {
+  align-items: center; 
   display: flex;
   justify-content: space-between;
-  align-items: center; 
 }
 
 .logo {
-  display: flex;
   align-items: center;
-  gap: 0.8rem;
   color: var(--destaque);
+  display: flex;
+  gap: 0.8rem;
   font-weight: 700;
   font-size: 1.6rem;
 }
@@ -53,20 +53,16 @@ header {
   display: none;
 }
 
-.navegacao__contato {
-  font-weight: 400;
-  font-size: 1.4rem;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 25%); 
-}
+
 
 /* Apresentação */
 
 .apresentacao__eu {
   background: url(../images/eu.jfif) no-repeat center / cover;
   border-radius: 50%;
-  width: 98px;
   height: 98px;
   margin-bottom: 1.6rem;
+  width: 98px;
 }
 
 .apresentacao__texto {
@@ -75,12 +71,12 @@ header {
   gap: 1.6rem;
 }
 
-.apresentacao__texto-titulo, .sobre__titulo {
+.apresentacao__texto-titulo, .sobre__titulo, .habilidades h2{
   font-weight: 700;
   font-size: 2.2rem;
 }
 
-.apresentacao__texto-paragrafo, .sobre__paragrafo{
+.apresentacao__texto-paragrafo, .sobre__paragrafo, .navegacao__contato{
   font-weight: 400;
   font-size: 1.4rem;
 }
@@ -89,14 +85,14 @@ header {
 .apresentacao__lista {
   display: flex;
   gap: 1rem;
-  list-style: none;
   font-size: 1.4rem;
   font-weight: 600;
+  list-style: none;
 }
 
 .apresentacao__link {
-  text-decoration: none;
   color: var(--destaque);
+  text-decoration: none;
 } 
 
 .apresentacao__link::after {
@@ -106,8 +102,52 @@ header {
 /* Sobre mim */
 
 .sobre {
+  background-color: var(--contato);
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  background-color: var(--contato);
+}
+
+
+/* habilidades */
+
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  text-align: center;
+}
+
+.habilidades__ensino { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  justify-content: center;
+}
+
+.habilidades__ensino-skills {
+  align-items: start;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  font-weight: 700;
+  gap: 1rem;
+  height: 118px;
+  justify-content: end;
+  padding: 1.6rem;
+  width: 156px;
+}
+
+[data-javascript]::before {
+  content: url(../images/JavaScript.svg)
+}
+
+[data-css]::before {
+  content: url(../images/css.svg)
+}
+
+[data-html]::before {
+  content: url(../images/html5.svg)
 }
