@@ -45,7 +45,7 @@ header {
 }
 
 .logo::before {
-  content: url(../images/auto_awesome_black_24dp\ 1.svg);
+  content: url(../images/logo.svg);
   
 }
 
@@ -96,7 +96,7 @@ header {
 } 
 
 .apresentacao__link::after {
-  content: url(../images/arrow_back_black_24dp\ 1.svg);
+  content: url(../images/seta.svg);
 }
 
 /* Sobre mim */
@@ -118,15 +118,15 @@ header {
   text-align: center;
 }
 
-.habilidades__ensino { 
+.habilidades__ensino,.habilidades__hobbies{ 
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 1.6rem;
   justify-content: center;
+  text-align: start;
 }
 
-.habilidades__ensino-skills {
+.habilidades__ensino-skills, .habilidades__hobbies-habitos{
   align-items: start;
   background-color: white;
   display: flex;
@@ -151,3 +151,18 @@ header {
 [data-html]::before {
   content: url(../images/html5.svg)
 }
+
+/* hobbies */
+
+[data-jogar]::before {
+  content: url(../images/jogar.svg);
+}
+
+[data-ouvir]::before {
+  content: url(../images/ouvir.svg);
+}
+
+[data-assistir]::before {
+  content: url(../images/assistir.svg);
+}
+
