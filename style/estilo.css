@@ -108,6 +108,9 @@ header {
   gap: 1.6rem;
 }
 
+.sobre__paragrafo {
+  line-height: 2rem;
+}
 
 /* habilidades */
 
@@ -165,4 +168,6 @@ header {
 [data-assistir]::before {
   content: url(../images/assistir.svg);
 }
+
+/* Formação */
 
