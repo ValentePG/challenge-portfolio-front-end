@@ -60,9 +60,9 @@ header {
 .apresentacao__eu {
   background: url(../images/eu.jfif) no-repeat center / cover;
   border-radius: 50%;
-  height: 98px;
+  height: 9.8rem;
   margin-bottom: 1.6rem;
-  width: 98px;
+  width: 9.8rem;
 }
 
 .apresentacao__texto {
@@ -71,7 +71,11 @@ header {
   gap: 1.6rem;
 }
 
-.apresentacao__texto-titulo, .sobre__titulo, .habilidades h2, .formacao__titulo{
+.apresentacao__texto-titulo,
+.sobre__titulo,
+.habilidades h2,
+.formacao__titulo,
+.experiencia__titulo h2{
   font-weight: 700;
   font-size: 2.2rem;
 } 
@@ -137,10 +141,10 @@ header {
   font-size: 1.6rem;
   font-weight: 700;
   gap: 1rem;
-  height: 118px;
+  height: 11.8rem;
   justify-content: end;
   padding: 1.6rem;
-  width: 156px;
+  width: 15.6rem;
 }
 
 [data-javascript]::before {
@@ -191,21 +195,104 @@ header {
 .formacao__certificado-descricao{ 
   margin-bottom: 0.8rem;
 }
+
 .formacao__certificados-imagem {
   align-items: center;
   background-color: white;
   display: flex;
-  height: 118px;
+  height: 11.8rem;
   justify-content: center;
 }
 
-.formacao__certificado-descricao h2 {
+.formacao__certificado-descricao h2, .experiencia__projetos-descricao h2{
   font-size: 1.6rem;
   font-weight: 700;
 }
 
-.formacao__certificado-descricao small {
+.formacao__certificado-descricao small, .experiencia__projetos-descricao small {
   font-size: 1.4rem;
   font-weight: 500;
 }
 
+/* Experiência profissional */
+
+.experiencia {
+  color: var(--destaque);
+  display: flex;
+  background-color: var(--background);
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 3.2rem;
+  text-align: center;
+}
+
+.experiencia__projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.experiencia__projetos-imagem {
+  height: 11.8rem;
+  width: 100%;
+  background-color: var(--contato);
+}
+
+.experiencia__projetos-imagem img {
+  width: 80%;
+  height: 100%;
+}
+
+.experiencia__projetos-descricao {
+  text-align: left;
+}
+
+.experiencia__projetos-botoes {
+  display: flex;
+  gap: 1.6rem;
+  height: 4rem;
+  margin-bottom: 4.8rem;
+}
+
+.experiencia__projetos-botoes:last-child {
+  margin-bottom: 0;
+}
+
+.experiencia__projetos-botoes a{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 1.2rem 1.6rem;
+}
+
+a.repositorio {
+  background-color: white;
+  color: var(--icones);
+  border: 1px solid var(--icones);
+}
+
+a.demo {
+  background-color: var(--icones);
+  color: white;
+}
+
+/* Contato */
+
+
+
+
+
+
+
+
+/* footer */
+
+footer {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  padding: 3.2rem 6.3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--destaque);
+}
