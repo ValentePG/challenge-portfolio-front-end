@@ -188,8 +188,8 @@ header {
   color: var(--destaque);
   display: flex;
   flex-direction: column;
-  text-align: left;
   gap: 0.8rem;
+  text-align: left;
 }
 
 .formacao__certificado-descricao{ 
@@ -217,9 +217,9 @@ header {
 /* Experiência profissional */
 
 .experiencia {
+  background-color: var(--background);
   color: var(--destaque);
   display: flex;
-  background-color: var(--background);
   flex-direction: column;
   gap: 1.6rem;
   padding: 3.2rem;
@@ -233,14 +233,14 @@ header {
 }
 
 .experiencia__projetos-imagem {
+  background-color: var(--contato);
   height: 11.8rem;
   width: 100%;
-  background-color: var(--contato);
 }
 
 .experiencia__projetos-imagem img {
-  width: 80%;
   height: 100%;
+  width: 80%;
 }
 
 .experiencia__projetos-descricao {
@@ -259,40 +259,33 @@ header {
 }
 
 .experiencia__projetos-botoes a{
-  text-decoration: none;
-  font-weight: 600;
   font-size: 1.4rem;
+  font-weight: 600;
   padding: 1.2rem 1.6rem;
+  text-decoration: none;
 }
 
 a.repositorio {
   background-color: white;
-  color: var(--icones);
   border: 1px solid var(--icones);
+  color: var(--icones);
 }
 
-a.demo {
+a.demonstracao {
   background-color: var(--icones);
   color: white;
 }
 
 /* Contato */
 
-
-
-
-
-
-
-
 /* footer */
 
 footer {
   background-color: white;
+  color: var(--destaque);
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 3.2rem 6.3rem;
   text-align: center;
   width: 100%;
-  padding: 3.2rem 6.3rem;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--destaque);
 }
