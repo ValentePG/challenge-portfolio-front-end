@@ -21,10 +21,6 @@ body {
   color: var(--destaque);
 }
 
-h1,h2,p {
-  color: var(--destaque);
-} 
-
 .container {
   padding: 1.6rem;
 }
