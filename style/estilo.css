@@ -71,10 +71,10 @@ header {
   gap: 1.6rem;
 }
 
-.apresentacao__texto-titulo, .sobre__titulo, .habilidades h2{
+.apresentacao__texto-titulo, .sobre__titulo, .habilidades h2, .formacao__titulo{
   font-weight: 700;
   font-size: 2.2rem;
-}
+} 
 
 .apresentacao__texto-paragrafo, .sobre__paragrafo, .navegacao__contato{
   font-weight: 400;
@@ -170,4 +170,42 @@ header {
 }
 
 /* Formação */
+
+.formacao {
+  background-color: var(--contato);
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding: 3.2rem;
+  text-align: center;
+}
+
+.formacao__certificados {
+  color: var(--destaque);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.8rem;
+}
+
+.formacao__certificado-descricao{ 
+  margin-bottom: 0.8rem;
+}
+.formacao__certificados-imagem {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  height: 118px;
+  justify-content: center;
+}
+
+.formacao__certificado-descricao h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.formacao__certificado-descricao small {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
 
