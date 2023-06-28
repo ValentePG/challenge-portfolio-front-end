@@ -18,6 +18,7 @@
 
 body {
   background-color: var(--background);
+  color: var(--destaque);
 }
 
 h1,h2,p {
@@ -37,7 +38,6 @@ header {
 
 .logo {
   align-items: center;
-  color: var(--destaque);
   display: flex;
   gap: 0.8rem;
   font-weight: 700;
@@ -95,7 +95,6 @@ header {
 }
 
 .apresentacao__link {
-  color: var(--destaque);
   text-decoration: none;
 } 
 
@@ -185,7 +184,6 @@ header {
 }
 
 .formacao__certificados {
-  color: var(--destaque);
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -218,7 +216,6 @@ header {
 
 .experiencia {
   background-color: var(--background);
-  color: var(--destaque);
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
@@ -282,7 +279,6 @@ a.demonstracao {
 
 footer {
   background-color: white;
-  color: var(--destaque);
   font-weight: 500;
   font-size: 1.6rem;
   padding: 3.2rem 6.3rem;
