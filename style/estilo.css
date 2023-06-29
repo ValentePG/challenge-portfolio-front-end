@@ -26,10 +26,11 @@ body {
 }
 /* header */ 
 
-header {
+.header {
   align-items: center; 
   display: flex;
   justify-content: space-between;
+  padding: 1.6rem;
 }
 
 .logo {
@@ -54,11 +55,16 @@ header {
 /* Apresentação */
 
 .apresentacao__eu {
-  background: url(../images/eu.jfif) no-repeat center / cover;
   border-radius: 50%;
   height: 9.8rem;
   margin-bottom: 1.6rem;
   width: 9.8rem;
+}
+
+.apresentacao__eu img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .apresentacao__texto {
@@ -92,6 +98,7 @@ header {
 
 .apresentacao__link {
   text-decoration: none;
+  color: var(--destaque);
 } 
 
 .apresentacao__link::after {
@@ -122,9 +129,7 @@ header {
 
 .habilidades__ensino,.habilidades__hobbies{ 
   display: flex;
-  /* flex-wrap: wrap; */
   gap: 1.6rem;
-  justify-content: center;
   text-align: start;
 }
 
@@ -139,7 +144,7 @@ header {
   height: 11.8rem;
   justify-content: end;
   padding: 1.6rem;
-  width: 15.6rem;
+  width: 100%;
 }
 
 [data-javascript]::before {
@@ -179,6 +184,12 @@ header {
   text-align: center;
 }
 
+.formacao__certificacao {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
 .formacao__certificados {
   display: flex;
   flex-direction: column;
@@ -186,9 +197,6 @@ header {
   text-align: left;
 }
 
-.formacao__certificado-descricao{ 
-  margin-bottom: 0.8rem;
-}
 
 .formacao__certificados-imagem {
   align-items: center;
@@ -227,8 +235,7 @@ header {
 
 .experiencia__projetos-imagem {
   background-color: var(--contato);
-  height: 11.8rem;
-  width: 100%;
+  height: 20rem;
 }
 
 .experiencia__projetos-imagem img {
@@ -271,6 +278,68 @@ a.demonstracao {
 
 /* Contato */
 
+.contato {
+  background-color: var(--contato);
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding: 3.2rem;
+  text-align: left;
+}
+
+.contato__titulo {
+  line-height: 2rem;
+  width: 70%;
+}
+
+.contato__titulo h2{
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.contato__titulo p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.input {
+  border: none;
+  color: var(--destaque);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  height: 5.6rem;
+  padding: 1.2rem 1.6rem;
+  width: 100%;
+}
+
+#mensagem {
+  height: 13.3rem;
+}
+
+::placeholder {
+  color: #A2A2A2;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif; 
+}
+
+#enviarMensagem {
+  border: none;
+  background-color: var(--icones);
+  color: white;
+  padding: 1.2rem 1.6rem;
+  width: 50%;
+}
+
+
 /* footer */
 
 footer {
@@ -280,4 +349,86 @@ footer {
   padding: 3.2rem 6.3rem;
   text-align: center;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+
+  .header {
+    padding: 1.6rem 3.2rem;
+  }
+
+  .navegacao__contato {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  .apresentacao {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3.2rem; 
+    align-items: center;
+  }
+
+  .apresentacao__eu {
+    height: 14.6rem;
+    width: 14.6rem;
+  }
+
+  .apresentacao__eu img{
+    height: 14.6rem;
+    width: 14.6rem;
+  }
+
+  .apresentacao__texto-paragrafo {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .apresentacao__link {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .apresentacao__lista {
+    gap: 3.2rem;
+  }
+
+  .container {
+    padding: 3.2rem;
+  }
+
+  .experiencia__projetos-imagem {
+    height: 32rem;
+  }
+
+  .formacao__certificacao {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .formacao__certificados {
+    width: 100%;
+  } 
+
+  #enviarMensagem {
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  
+  .apresentacao__eu {
+    height: 36.8rem;
+    width: 36.8rem;
+  }
+
+  .apresentacao__eu img{
+    height: 36.8rem;
+    width: 36.8rem;
+  }
+
+  main, header{
+    max-width: 1136px;
+    margin: auto;
+  }
 }
