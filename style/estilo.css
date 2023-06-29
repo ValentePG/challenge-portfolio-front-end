@@ -429,6 +429,6 @@ footer {
 
   main, header{
     max-width: 1136px;
-    margin: auto;
+    margin: 0 auto;
   }
 }
