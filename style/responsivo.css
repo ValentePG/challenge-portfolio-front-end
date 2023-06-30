@@ -111,6 +111,11 @@
     color: var(--destaque);
   }
 
+  .navegacao__link:hover {
+    text-decoration: underline;
+    color: var(--icones);
+  }
+
   .sobre__titulo, .sobre__paragrafo {
     width: 70%;
   }
@@ -118,6 +123,19 @@
   .sobre__paragrafo {
     font-size: 1.6rem;
     font-weight: 400;
+  }
+
+  .experiencia__projetos {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .experiencia__projetos:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .experiencia__projetos-imagem {
+    width: 80%
   }
 
   .experiencia__projetos-descricao h2 {
