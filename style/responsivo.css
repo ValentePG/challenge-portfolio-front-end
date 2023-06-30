@@ -64,7 +64,7 @@
 
 @media (min-width: 992px) {
   
-  .tela{
+  .container__width{
     max-width: 1136px;
     margin: 0 auto;
   }

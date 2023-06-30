@@ -24,7 +24,7 @@ body {
   padding: 1.6rem;
 }
 
-.background {
+.container__background {
   background-color: var(--contato);
 }
 /* header */ 
@@ -111,7 +111,6 @@ body {
 /* Sobre mim */
 
 .sobre {
-  /* background-color: var(--contato); */
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
@@ -179,7 +178,6 @@ body {
 /* Formação */
 
 .formacao {
-  /* background-color: var(--contato); */
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
