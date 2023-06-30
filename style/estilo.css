@@ -6,7 +6,6 @@
   padding: 0px;
 }
 
-
 :root {
   font-size: 62.5%;
   font-family: 'Raleway', sans-serif; 
@@ -23,6 +22,10 @@ body {
 
 .container {
   padding: 1.6rem;
+}
+
+.background {
+  background-color: var(--contato);
 }
 /* header */ 
 
@@ -108,7 +111,7 @@ body {
 /* Sobre mim */
 
 .sobre {
-  background-color: var(--contato);
+  /* background-color: var(--contato); */
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
@@ -176,7 +179,7 @@ body {
 /* Formação */
 
 .formacao {
-  background-color: var(--contato);
+  /* background-color: var(--contato); */
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -279,7 +282,7 @@ a.demonstracao {
 /* Contato */
 
 .contato {
-  background-color: var(--contato);
+  /* background-color: var(--contato); */
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -349,86 +352,4 @@ footer {
   padding: 3.2rem 6.3rem;
   text-align: center;
   width: 100%;
-}
-
-@media (min-width: 768px) {
-
-  .header {
-    padding: 1.6rem 3.2rem;
-  }
-
-  .navegacao__contato {
-    font-size: 1.6rem;
-    font-weight: 700;
-  }
-
-  .apresentacao {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 3.2rem; 
-    align-items: center;
-  }
-
-  .apresentacao__eu {
-    height: 14.6rem;
-    width: 14.6rem;
-  }
-
-  .apresentacao__eu img{
-    height: 14.6rem;
-    width: 14.6rem;
-  }
-
-  .apresentacao__texto-paragrafo {
-    font-size: 1.6rem;
-    font-weight: 400;
-  }
-
-  .apresentacao__link {
-    font-size: 1.6rem;
-    font-weight: 500;
-  }
-
-  .apresentacao__lista {
-    gap: 3.2rem;
-  }
-
-  .container {
-    padding: 3.2rem;
-  }
-
-  .experiencia__projetos-imagem {
-    height: 32rem;
-  }
-
-  .formacao__certificacao {
-    flex-direction: row;
-    width: 100%;
-  }
-
-  .formacao__certificados {
-    width: 100%;
-  } 
-
-  #enviarMensagem {
-    width: 30%;
-  }
-}
-
-@media (min-width: 992px) {
-  
-  .apresentacao__eu {
-    height: 36.8rem;
-    width: 36.8rem;
-  }
-
-  .apresentacao__eu img{
-    height: 36.8rem;
-    width: 36.8rem;
-  }
-
-  main, header{
-    max-width: 1136px;
-    margin: 0 auto;
-  }
 }

@@ -6,12 +6,13 @@
   <title>Portfólio</title>
   <link rel="stylesheet" href="./style/reset.css">
   <link rel="stylesheet" href="./style/estilo.css">
+  <link rel="stylesheet" href="./style/responsivo.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head> 
 <body>
-  <header class="header">
+  <header class="header tela">
     <div class="logo">
       <h1>Gabriel Valente</h1>
     </div>
@@ -24,12 +25,13 @@
         <li class="navegacao__lista-itens"><a href="#" class="navegacao__link">Formação</a></li>
         <li class="navegacao__lista-itens"><a href="#" class="navegacao__link">Projetos</a></li>
       </ul>
-      <p class="navegacao__contato">bielvhv3@gmail.com</p>
+      <div>
+        <p class="navegacao__contato">bielvhv3@gmail.com</p>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <section class="apresentacao container">
+    <section class="apresentacao container tela">
       <div class="apresentacao__eu">
         <img src="images/eu.jfif" alt="foto de perfil">
       </div>
@@ -48,18 +50,22 @@
         </ul>
       </div>
     </section>
-    <section class="sobre container">
-      <div class="sobre__titulo">
-        <h2>Sobre mim</h2>
-      </div>
-      <div class="sobre__paragrafo">
-        <p>Cai de paraquedas em desenvolvimento de software desde o dia 01 de 2023 onde me encontrei como profissional e com um objetivo real de me tornar um bom programador, desde lá, venho estudando desenvolvimento front-end com as tecnologias HTML,CSS e JavaScript, além de muitas outras teorias e práticas que encontrei pelo caminho e que são importantes para o crescimento de um profissional de tecnologia.
-        <br>
-        <br>
-        Após alguns meses estudando, decidi que me tornaria um desenvolvedor full-stack, pois acho muito importante aprender sobre os 2 lados da moeda do desenvolvimento de software. (back-end e front-end)</p>
-      </div>
-    </section>
-    <section class="habilidades container">
+
+    <div class="background">
+      <section class="sobre container tela">
+        <div class="sobre__titulo">
+          <h2>Sobre mim</h2>
+        </div>
+        <div class="sobre__paragrafo">
+          <p>Cai de paraquedas em desenvolvimento de software desde o dia 01 de 2023 onde me encontrei como profissional e com um objetivo real de me tornar um bom programador, desde lá, venho estudando desenvolvimento front-end com as tecnologias HTML,CSS e JavaScript, além de muitas outras teorias e práticas que encontrei pelo caminho e que são importantes para o crescimento de um profissional de tecnologia.
+          <br>
+          <br>
+          Após alguns meses estudando, decidi que me tornaria um desenvolvedor full-stack, pois acho muito importante aprender sobre os 2 lados da moeda do desenvolvimento de software. (back-end e front-end)</p>
+        </div>
+      </section>
+    </div>
+
+    <section class="habilidades container tela">
       <div class="habilidades__titulo">
         <h2>Skills</h2>
       </div>
@@ -90,51 +96,53 @@
       </section>
     </section>
     
-    <section class="formacao">
-      <div class="formacao__titulo">
-        <h2>Formação acadêmica</h2>
-      </div>
-      <div class="formacao__certificacao">
-        <div class="formacao__certificados">
-          <div class="formacao__certificados-imagem">
-            <img src="./images/descomplica.png" alt="logo descomplica">
+    <div class="background">
+      <section class="formacao tela">
+        <div class="formacao__titulo">
+          <h2>Formação acadêmica</h2>
+        </div>
+        <div class="formacao__certificacao">
+          <div class="formacao__certificados">
+            <div class="formacao__certificados-imagem">
+              <img src="./images/descomplica.png" alt="logo descomplica">
+            </div>
+            <div class="formacao__certificado-descricao">
+              <h2>Análise e desenvolvimento de sistemas</h2>
+              <br>
+              <small>Em andamento - Descomplica</small>
+            </div>
           </div>
-          <div class="formacao__certificado-descricao">
-            <h2>Análise e desenvolvimento de sistemas</h2>
-            <br>
-            <small>Em andamento - Descomplica</small>
+      
+          <div class="formacao__certificados">
+            <div class="formacao__certificados-imagem">
+              <img src="./images/descomplica.png" alt="logo descomplica">
+            </div>
+            <div class="formacao__certificado-descricao">
+              <h2>Análise e desenvolvimento de sistemas</h2>
+              <br>
+              <small>Em andamento - Descomplica</small>
+            </div>
+          </div>
+      
+          <div class="formacao__certificados">
+            <div class="formacao__certificados-imagem">
+              <img src="./images/descomplica.png" alt="logo descomplica">
+            </div>
+            <div class="formacao__certificado-descricao">
+              <h2>Técnologo - ADS</h2>
+              <br>
+              <small>Em andamento - Descomplica</small>
+            </div>
           </div>
         </div>
+      </section>
+    </div>
     
-        <div class="formacao__certificados">
-          <div class="formacao__certificados-imagem">
-            <img src="./images/descomplica.png" alt="logo descomplica">
-          </div>
-          <div class="formacao__certificado-descricao">
-            <h2>Análise e desenvolvimento de sistemas</h2>
-            <br>
-            <small>Em andamento - Descomplica</small>
-          </div>
-        </div>
-    
-        <div class="formacao__certificados">
-          <div class="formacao__certificados-imagem">
-            <img src="./images/descomplica.png" alt="logo descomplica">
-          </div>
-          <div class="formacao__certificado-descricao">
-            <h2>Técnologo - ADS</h2>
-            <br>
-            <small>Em andamento - Descomplica</small>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="experiencia">
+    <section class="experiencia tela">
       <div class="experiencia__titulo">
         <h2>Experiência profissional</h2>
       </div>
-      <div class="experiencia__projetos">
+      <div class="experiencia__projetos"> <!-- Alterar Aqui -->
         <div class="experiencia__projetos-imagem">
           <img src="./images/codificador.png" alt="Print projeto decodificador de texto">
         </div>
@@ -147,6 +155,7 @@
           <a class="repositorio" href="@">Repositório</a>
           <a class="demonstracao" href="@">Ver demo</a>
         </div>
+
         <div class="experiencia__projetos-imagem">
           <img src="./images/codificador.png" alt="Print projeto decodificador de texto">
         </div>
@@ -162,25 +171,26 @@
       </div>
     </section>
     
-    <section class="contato">
-      <div class="contato__titulo">
-        <h2>Contato</h2>
-        <p>Quer entrar em contato comigo?
-        Preencha o formulário ao lado e
-        entrarei em contato o mais rápido possível.
-        </p>
-      </div>
-      <div class="contato__formulario">
-        <form class="formulario">
-          <label for="nome"><input type="text" name="nome" class="input" id="nome" placeholder="Seu nome"></label>
-          <label for="email"><input type="email" name="email" class="input" id="email" placeholder="Seu email"></label>
-          <label for="assunto"><input type="text" name="assunto" class="input" id="assunto" placeholder="Assunto"></label>
-          <label for="mensagem"><textarea name="mensagem" id="mensagem" class="input" cols="30" rows="10" placeholder="Mensagem"></textarea></label>
-          <button id="enviarMensagem">Enviar mensagem</button>
-        </form>
-      </div>
-    </section>
-  </main>
+    <div class="background">
+      <section class="contato tela">
+        <div class="contato__titulo">
+          <h2>Contato</h2>
+          <p>Quer entrar em contato comigo?
+          Preencha o formulário abaixo e
+          entrarei em contato o mais rápido possível.
+          </p>
+        </div>
+        <div class="contato__formulario">
+          <form class="formulario">
+            <label for="nome"><input type="text" name="nome" class="input" id="nome" placeholder="Seu nome"></label>
+            <label for="email"><input type="email" name="email" class="input" id="email" placeholder="Seu email"></label>
+            <label for="assunto"><input type="text" name="assunto" class="input" id="assunto" placeholder="Assunto"></label>
+            <label for="mensagem"><textarea name="mensagem" id="mensagem" class="input" cols="30" rows="10" placeholder="Mensagem"></textarea></label>
+            <button id="enviarMensagem">Enviar mensagem</button>
+          </form>
+        </div>
+      </section>
+    </div>
 
   <footer>
     <p>&copy;Desenvolvido por Gabriel Valente 2023</p>

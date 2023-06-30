@@ -1,0 +1,153 @@
+@media (min-width: 768px) {
+  
+  .container {
+    padding: 3.2rem;
+  }
+
+  .header {
+    padding: 1.6rem 3.2rem;
+  }
+
+  .navegacao__contato {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  .apresentacao {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3.2rem; 
+    align-items: center;
+  }
+
+  .apresentacao__eu {
+    height: 14.6rem;
+    width: 14.6rem;
+  }
+
+  .apresentacao__eu img{
+    height: 14.6rem;
+    width: 14.6rem;
+  }
+
+  .apresentacao__texto-paragrafo {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .apresentacao__link {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .apresentacao__lista {
+    gap: 3.2rem;
+  }
+
+  
+  .formacao__certificacao {
+    flex-direction: row;
+  }
+  
+  .formacao__certificados {
+    width: 100%;
+  } 
+
+  .experiencia__projetos-imagem {
+    height: 32rem;
+  }
+
+  #enviarMensagem {
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  
+  .tela{
+    max-width: 1136px;
+    margin: 0 auto;
+  }
+
+  .apresentacao__eu {
+    height: 36.8rem;
+    width: 36.8rem;
+  }
+
+  .apresentacao__eu img{
+    height: 36.8rem;
+    width: 36.8rem;
+  }
+
+  .apresentacao__texto-titulo {
+    font-size: 5.2rem;
+    font-weight: 700;
+  }
+  
+  .apresentacao__texto-paragrafo {
+    font-size: 2.2rem;
+    font-weight: 400 ;
+  }
+
+
+  .navegacao {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  .navegacao__lista {
+    display: flex;
+    gap: 3.2rem; 
+  }
+
+  .navegacao__lista-itens {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .navegacao__link {
+    text-decoration: none;
+    color: var(--destaque);
+  }
+
+  .sobre__titulo, .sobre__paragrafo {
+    width: 70%;
+  }
+
+  .sobre__paragrafo {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .experiencia__projetos-descricao h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  .experiencia__projetos-descricao small {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+   
+  .habilidades__titulo h2,
+  .formacao__titulo h2, 
+  .experiencia__titulo h2, 
+  .contato__titulo h2,
+  .sobre__titulo h2{
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+
+  .formacao__certificacao{
+    margin-bottom: 5rem;
+  }
+
+  .formacao__certificados-imagem{
+    height: 286px;
+  }
+
+  .formacao__certificados-imagem img {
+    width: 50%;
+  }
+}
