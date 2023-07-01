@@ -209,17 +209,38 @@
           </p>
         </div>
         <div class="contato__formulario">
-          <form class="formulario">
+          <form class="formulario" data-formulario >
 
-            <label for="nome"><input type="text" name="nome" class="input" id="nome" placeholder="Seu nome" required maxlength="50"></label>
+            <fieldset class="formulario__fieldset">
+              <label for="nome"><span>
+                <span>Nome</span>
+              </span></label>
+              <input type="text" name="nome" class="input" id="nome" placeholder="Seu nome" required maxlength="50">
+              <span class="formulario__mensagem-erro"></span>
+            </fieldset>
 
-            <label for="email"><input type="email" name="email" class="input" id="email" placeholder="Seu email" required></label>
+            <fieldset class="formulario__fieldset">
+              <label for="email">Email</label>
+              <input type="email" name="email" class="input" id="email" placeholder="Seu email" minlength="4" required>
+              <span class="formulario__mensagem-erro"></span>
+            </fieldset>
 
-            <label for="assunto"><input type="text" name="assunto" class="input" id="assunto" placeholder="Assunto" maxlength="50" required></label>
+            <fieldset class="formulario__fieldset">
+              <label for="assunto">Assunto</label>
+              <input type="text" name="assunto" class="input" id="assunto" placeholder="Assunto" maxlength="50" required>
+              <span class="formulario__mensagem-erro"></span> 
+            </fieldset>
 
-            <label for="mensagem"><textarea name="mensagem" id="mensagem" class="input" cols="30" rows="10" placeholder="Mensagem" maxlength="300" required></textarea></label>
+            <fieldset class="formulario__fieldset">
+              <label for="mensagem">Mensagem</label>
+              <textarea name="mensagem" id="mensagem" class="input" cols="30" rows="10" placeholder="Mensagem" maxlength="300" required></textarea>
+              <span class="formulario__mensagem-erro"></span>
+            </fieldset>
 
-            <input type="submit" value="Enviar mensagem" id="enviarMensagem">
+            <div>
+              <input type="submit" value="Enviar mensagem" id="enviarMensagem">
+              <span class="formulario__mensagem-erro"></span>
+            <div>
           </form>
         </div>
       </section>

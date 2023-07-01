@@ -56,7 +56,6 @@ body {
 /* Apresentação */
 
 .apresentacao__eu {
-  border-radius: 50%;
   height: 9.8rem;
   margin-bottom: 1.6rem;
   width: 9.8rem;
@@ -249,14 +248,9 @@ body {
   gap: 0.8rem;
 }
 
-.experiencia__projetos-imagem {
-  background-color: rgba(0, 0, 0, 0.062);
-  height: 20rem;
-}
-
 .experiencia__projetos-imagem img {
   height: 100%;
-  width: 80%;
+  width: 100%;
 }
 
 .experiencia__projetos-descricao {
@@ -266,8 +260,6 @@ body {
 .experiencia__projetos-botoes {
   display: flex;
   gap: 1.6rem;
-  height: 4rem;
-  margin-bottom: 4.8rem;
 }
 
 .experiencia__projetos-botoes:last-child {
@@ -307,7 +299,6 @@ a.demonstracao:hover {
 /* Contato */
 
 .contato {
-  /* background-color: var(--contato); */
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -337,15 +328,38 @@ a.demonstracao:hover {
   gap: 3.2rem;
 }
 
+.formulario__fieldset label {
+  color: var(--destaque);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.formulario__mensagem-erro {
+  color: red;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: rgba(255, 0, 0, 0.171);
+  padding: 0.8rem;
+  border-radius: 0 0 0rem 0rem;
+  
+}
+
+#mensagem {
+  resize: none;
+}
+
+.formulario__fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
 .input {
-  border: none;
   color: var(--destaque);
   font-size: 1.6rem;
   font-weight: 400;
   font-family: 'Raleway', sans-serif;
-  height: 5.6rem;
-  padding: 1.2rem 1.6rem;
-  width: 100%;
+  padding: 1.6rem 1.2rem;
 }
 
 #mensagem {

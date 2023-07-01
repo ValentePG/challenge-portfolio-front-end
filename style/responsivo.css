@@ -44,7 +44,6 @@
     gap: 3.2rem;
   }
 
-  
   .formacao__certificacao {
     flex-direction: row;
   }
@@ -52,10 +51,6 @@
   .formacao__certificados {
     width: 100%;
   } 
-
-  .experiencia__projetos-imagem {
-    height: 32rem;
-  }
 
   #enviarMensagem {
     width: 30%;
