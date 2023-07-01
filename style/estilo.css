@@ -225,7 +225,7 @@ body {
   background-color: var(--background);
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 3.2rem;
   padding: 3.2rem;
   text-align: center;
 }
@@ -247,6 +247,8 @@ body {
   flex-direction: column;
   gap: 0.8rem;
 }
+
+
 
 .experiencia__projetos-imagem img {
   height: 100%;
